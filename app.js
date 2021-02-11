@@ -1,15 +1,3 @@
-//teorema lui Pitagora
-    // variabile:
-        // ipotenuza: ip; -> care este lungimea ipotenuzei? **Please write a number
-        // cateta 1: x; -> care este lungimea primei catete? **Please write a number
-        // cateta 2: y; -> care este lungimea celei de-a doua catete? **Please write a number
-            // x*x= a;
-            // y*y= b;
-            // ip*ip= c
-                // => a+b=c;
-    // alerta: Lungimea ipotenuzei/catetei 1/cateteti 2 este: ;
-
-
 
 var question, x, ip, y, patratPl, patratSl;
 
@@ -107,23 +95,6 @@ function doarNumar(g) {
         calculatorReciprocaTeoremeiLuiPigora();
     }
 }
-
-
-
-// ecuatie de gradul al doilea;
-    // variabile 
-        // necunoscuta 1 = k; 
-        // a -> primul coeficient;
-        // b -> al doilea coeficient;
-        // c -> termenul liber;
-        // t = b * b;
-        // q = -b;
-        // delta = t - 4 * a * c;
-            // if delta <0;
-            // if delta = 0;
-            // if delta > 0;
-        // primaValoare = (q + Math.sqrt(delta))/(2*a);
-        // aDouaValoare = (q - Math.sqrt(delta))/(2*a);
         
 function calculatorEcuatieDeGradulAlDoilea() {
     var a, b, c, t, q, delta, primaValoare, aDouaValoare;
