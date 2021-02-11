@@ -110,10 +110,10 @@ function calculatorEcuatieDeGradulAlDoilea() {
     
     q = b * (-1);
     
-    if (a == 0) {
+    if (a === 0) {
         primaValoare = q / c;
         alert('x este egal cu: ' + primaValoare);
-    } else if (a != 0) {
+    } else if (a !== 0) {
         t = b * b;
         delta = t - 4 * a * c;
     
