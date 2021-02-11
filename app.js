@@ -97,7 +97,7 @@ function doarNumar(g) {
 }
         
 function calculatorEcuatieDeGradulAlDoilea() {
-    var a, b, c, t, q, delta, primaValoare, aDouaValoare;
+     var a, b, c, t, q, delta, primaValoare, aDouaValoare;
     
     a = prompt('Care este valoarea coeficientului lui x^2?');
     ecChecker(a);
@@ -109,11 +109,24 @@ function calculatorEcuatieDeGradulAlDoilea() {
     ecChecker(c);
     
     q = b * (-1);
-    t = b * b;
-    delta = t - 4 * a * c;
-    primaValoare = (q + Math.sqrt(delta)) / (2 * a);
-    aDouaValoare = (q - Math.sqrt(delta)) / (2 * a);
-    alert('x poate lua urmatoarele valori: ' + primaValoare + ' si ' + aDouaValoare);
+    
+    if (a == 0) {
+        primaValoare = q / c;
+        alert('x este egal cu: ' + primaValoare);
+    } else if (a != 0) {
+        t = b * b;
+        delta = t - 4 * a * c;
+    
+        if (delta === 0) {
+            primaValoare = q / (2 * a);
+            alert('x este egal cu: ' + primaValoare);
+        } else if (delta > 0) {
+            primaValoare = (q + Math.sqrt(delta)) / (2 * a);
+            aDouaValoare = (q - Math.sqrt(delta)) / (2 * a);
+            alert('x poate lua urmatoarele valori: ' + primaValoare + ' si ' + aDouaValoare);
+        } else if (delta < 0) {
+            alert('Delta mai mic decat 0 => x nu poate lua valori reale');
+        }
 }
 
 function ecChecker(s) {
