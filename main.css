@@ -55,4 +55,5 @@ input[type = "submit"]:hover {
 }
 #rezultat {
     max-width: 100%;
+    width: auto;
 }
