@@ -48,3 +48,9 @@ function calculator() {
     }
 }
 
+function back() {
+    document.getElementById('result').style.display = 'none';
+    document.getElementById('box').style.display = 'block';
+}
+
+
