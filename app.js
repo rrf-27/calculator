@@ -1,12 +1,3 @@
-// calculator ecuatie de gradul al ii-lea 
-    // variabile
-        //a, b, c;
-        //delta = b^2*4ac;
-        // sqOfb = b*b;
-        // negativb = b * (-1);
-            // if (a!=0)... else ...
-        // firstValue = (negativeb + Math.sqrt(delta))/(2*a);
-        // secondValue = (negativeb - Math.sqrt(delta))/(2*a);
 
 function calculator() {
     var a, b, c, delta, sqOfb, negativeb, firstValue, secondValue;
@@ -52,5 +43,3 @@ function back() {
     document.getElementById('result').style.display = 'none';
     document.getElementById('box').style.display = 'block';
 }
-
-
