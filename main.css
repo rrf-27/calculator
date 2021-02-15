@@ -16,6 +16,7 @@ body {
     width: 18.75rem;
     height: 37.5rem;
     padding: 2.5rem;
+    text-align: center;
 }
 
 form input {
@@ -58,3 +59,4 @@ input[type = "submit"]:hover {
     max-width: 100%;
     width: auto;
 }
+
