@@ -38,6 +38,7 @@ form input {
 form input[type = "text"]:focus {
     width: 100px;
     border-radius: 1.875rem;
+    border-color: chartreuse;
 }
 
 input[type = "submit"] {
