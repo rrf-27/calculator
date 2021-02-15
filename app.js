@@ -1,3 +1,12 @@
+// calculator ecuatie de gradul al ii-lea 
+    // variabile
+        //a, b, c;
+        //delta = b^2*4ac;
+        // sqOfb = b*b;
+        // negativb = b * (-1);
+            // if (a!=0)... else ...
+        // firstValue = (negativeb + Math.sqrt(delta))/(2*a);
+        // secondValue = (negativeb - Math.sqrt(delta))/(2*a);
 
 function calculator() {
     var a, b, c, delta, sqOfb, negativeb, firstValue, secondValue;
@@ -23,12 +32,20 @@ function calculator() {
         if (delta == 0 || delta > 0) {
             firstValue = (negativeb + Math.sqrt(delta)) / (2 * a);
             secondValue = (negativeb - Math.sqrt(delta)) / (2 * a);
+            
+            if (firstValue === secondValue) {
+                document.getElementById('rezultat').value = 'x= ' + firstValue;
+                
+                document.getElementById('box').style.display = 'none';
     
-            document.getElementById('rezultat').value = 'x = ' + firstValue + ' or ' + 'x = ' + secondValue;
+                document.getElementById('result').style.display = 'block';
+            } else {
+                document.getElementById('rezultat').value = 'x = ' + firstValue + ' or ' + 'x = ' + secondValue;
     
-            document.getElementById('box').style.display = 'none';
+                document.getElementById('box').style.display = 'none';
     
-            document.getElementById('result').style.display = 'block';   
+                document.getElementById('result').style.display = 'block';    
+            }  
         } else {
             document.getElementById('rezultat').value = 'delta = ' + delta + ' => x nu poate lua valori reale';
     
