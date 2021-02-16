@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <script src="app.js"></script>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    
+    <body>
+        
+         <form action="calculator.html" method="post" id="box" onsubmit="return false">
+             <input type="text" id="first-value"  placeholder="a">
+             <input type="text" id="second-value"  placeholder="b">
+             <input type="text" id="third-value"  placeholder="c">
+             <input type="submit" value="Submit" onclick="calculator()">
+             <input type="reset" value="Reset">
+        </form>
+        <form action="calculator.html" method="post" id="result">
+            <input type="text" placeholder="x1" id="rezultat-1" readonly>
+            <input type="text" placeholder="x2" id="rezultat-2" readonly>
+            <input type="submit" value="Try again" onsubmit="return false" onclick="back()">
+        </form>
+
+    </body>
+    
+</html>
