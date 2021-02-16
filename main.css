@@ -42,12 +42,12 @@ form input[type = "text"]:focus {
     border-color: chartreuse;
 }
 
-input[type = "submit"] {
+input[type = "submit"], input[type = "reset"] {
     width: 12.5rem;
     border-color: lightgreen;
 }
 
-input[type = "submit"]:hover {
+input[type = "submit"]:hover, input[type = "reset"]:hover {
     background-color: lightgreen;
     color: black;
 }
