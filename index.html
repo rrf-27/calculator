@@ -6,20 +6,21 @@
         <title>Calculator</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="calculator.css">
     </head>
     
     <body>
         
-         <form action="index.html" method="post" id="box" onsubmit="return false">
+         <form action="calculator.html" method="post" id="box" onsubmit="return false">
              <input type="text" id="first-value"  placeholder="a">
              <input type="text" id="second-value"  placeholder="b">
              <input type="text" id="third-value"  placeholder="c">
              <input type="submit" value="Submit" onclick="calculator()">
+             <input type="reset" value="Reset">
         </form>
-        <form action="index.html" method="post" id="result" onsubmit="return false">
+        <form action="calculator.html" method="post" id="result">
             <input type="text" placeholder="result" id="rezultat" readonly>
-            <input type="submit" value="Try again" onclick="back()">
+            <input type="submit" value="Try again" onsubmit="return false" onclick="back()">
         </form>
 
     </body>
