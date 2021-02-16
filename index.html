@@ -18,9 +18,9 @@
              <input type="submit" value="Submit" onclick="calculator()">
              <input type="reset" value="Reset">
         </form>
-        <form action="index.html" method="post" id="result">
+        <form action="index.html" method="post" id="result" onsubmit="return false">
             <input type="text" placeholder="result" id="rezultat" readonly>
-            <input type="submit" value="Try again" onsubmit="return false" onclick="back()">
+            <input type="submit" value="Try again" onclick="back()">
         </form>
 
     </body>
